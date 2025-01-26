@@ -2,10 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faChromecast } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
   return (
-    <header className="bg-white">
+    <header className="absolute w-dvw bg-white">
       <div className="flex justify-between items-center container mx-auto py-3 border-b-[.4px] border-gray-300">
         <div className="flex items-center gap-1">
           <FontAwesomeIcon className="text-3xl text-red-700" icon={faYoutube} />
@@ -13,12 +14,12 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-5">
+          <FontAwesomeIcon className="text-black text-2xl" icon={faChromecast} />
           <FontAwesomeIcon className="text-black text-2xl" icon={faBell} />
           <FontAwesomeIcon
             className="text-black text-2xl"
             icon={faMagnifyingGlass}
           />
-          <div className="h-8 w-8 rounded-full bg-gray-300"></div>
         </div>
       </div>
     </header>
